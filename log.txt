@@ -1,0 +1,2 @@
+log file
+changes after being cloned
