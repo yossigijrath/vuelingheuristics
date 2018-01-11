@@ -1,2 +1,3 @@
 log file
 changes after being cloned
+another comment into the file 
