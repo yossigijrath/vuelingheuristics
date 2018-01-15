@@ -21,25 +21,13 @@ def reading_data_locations():
 
 #functions that reads the distances between the locations(not finished)      
 def reading_data_distances():
-    with open('MokumAirwaysCities.txt','r') as csvfile:
-        plots = csv.reader(csvfile, delimiter=',')
-        for row in plots:
-            a.append(int(row[0]))
-            x.append(int(row[1]))
-            y.append(int(row[2]))
-            z.append(str(row[3]))
-        return (a, x, y, z)
+    matrix = np.loadtxt('MokumAirwaysDistances.txt')
+    print (matrix)
 
 #functions that reads the number of passengers per locations(not finished)
 def reading_data_transport():
-    with open('MokumAirwaysCities.txt','r') as csvfile:
-        plots = csv.reader(csvfile, delimiter=',')
-        for row in plots:
-            a.append(int(row[0]))
-            x.append(int(row[1]))
-            y.append(int(row[2]))
-            z.append(str(row[3]))
-        return (a, x, y, z)
+    matrix = np.loadtxt('MokumAirwaysPassengers.txt')
+    print (matrix)
 
 #function that plots the data of the locations file      
 def plot_data():
